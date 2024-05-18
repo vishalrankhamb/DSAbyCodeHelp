@@ -29,7 +29,7 @@ int main() {
   cout << endl;
   for (int i = 0; i < 3; i++) {
     for (int j = 0; j < 5; j++) {
-      if (i == 0 || i == 3 - 1||j==0||j==5-1) {
+      if (i == 0 || i == 3 - 1 || j == 0 || j == 5 - 1) {
         cout << "* ";
       } else {
         cout << "  ";
@@ -43,7 +43,7 @@ int main() {
   cout << endl;
   for (int i = 0; i < 5; i++) {
     for (int j = 0; j < 5; j++) {
-      if (i == 0 || i == 5 - 1||j==0||j==5-1) {
+      if (i == 0 || i == 5 - 1 || j == 0 || j == 5 - 1) {
         cout << "* ";
       } else {
         cout << "  ";
@@ -52,5 +52,24 @@ int main() {
     cout << endl;
   }
   cout << endl;
+  // Half Pyramid Pattern
+  cout << "Half Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < i + 1; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
+  cout << endl;
+  // Inverted Half Pyramid Pattern
+  cout << "Inverted Half Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j <5-i; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
   return 0;
 }
