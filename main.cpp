@@ -82,5 +82,15 @@ int main() {
     cout << endl;
   }
   cout << endl;
+  // Inverted Numeric Half Pyramid Pattern
+  cout << "Inverted Half Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5 - i; j++) {
+      cout << j + 1 << " ";
+    }
+    cout << endl;
+  }
+  cout << endl;
   return 0;
 }
