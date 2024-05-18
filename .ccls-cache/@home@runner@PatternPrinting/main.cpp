@@ -66,10 +66,21 @@ int main() {
   cout << "Inverted Half Pyramid Pattern: ";
   cout << endl;
   for (int i = 0; i < 5; i++) {
-    for (int j = 0; j <5-i; j++) {
+    for (int j = 0; j < 5 - i; j++) {
       cout << "* ";
     }
     cout << endl;
   }
+  cout << endl;
+  // Half Numeric Pyramid Pattern
+  cout << "Half Numeric Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < i + 1; j++) {
+      cout << j + 1 << " ";
+    }
+    cout << endl;
+  }
+  cout << endl;
   return 0;
 }
