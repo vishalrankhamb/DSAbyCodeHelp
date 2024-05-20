@@ -249,6 +249,57 @@ int main() {
     }
     cout << endl;
   }
+  cout << endl;
+  cout << "New Pattern :" << endl;
+
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < i + 1; j++) {
+      if (i == 0 || j == i + 1 - 1) {
+        cout << i + 1 << " ";
+      } else {
+        cout << i + 1 << "*";
+      }
+    }
+    cout << endl;
+  }
+  cout << endl;
+  // Hollow Inverted Half Pyramid Pattern
+  cout << "Hollow Inverted Half Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5 - i; j++) {
+      if (j == 0 || j == 5 - i - 1 || i == 0 || j == 5 - 1) {
+        cout << "* ";
+      } else {
+        cout << "  ";
+      }
+    }
+    cout << endl;
+  }
+  cout << endl;
+
+  /*
+    1
+    12
+    1_3
+    1__4
+    12345 */
+
+  cout << "Unique Pattern: " << endl;
+  for (int row = 0; row < 5; row++) {
+    int count = 0;
+    for (int col = 0; col < row + 1; col++) {
+      count = count + 1;
+      if (col == 0 || row == 4 || col == row) {
+        cout << col + 1;
+      } else {
+
+        cout << "_";
+      }
+    }
+    cout << endl;
+  }
+  cout << endl;
 
   return 0;
 }
