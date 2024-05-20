@@ -119,5 +119,40 @@ int main() {
     cout << endl;
   }
   cout << endl;
+  // Inverted Full Pyramid Pattern
+  cout << "Inverted Full Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < i; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j <4-i; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
+  cout << endl;
+  //Diamond Pattern
+  cout << " Diamond Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 8/2; i++) {
+    for (int j = 0; j < 8 /2- i - 1; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < i + 1; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
+  for (int i = 0; i < 8/2; i++) {
+    for (int j = 0; j < i; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j <8/2-i; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
+  cout << endl;
   return 0;
 }
