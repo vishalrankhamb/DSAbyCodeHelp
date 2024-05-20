@@ -111,7 +111,7 @@ int main() {
   cout << endl;
   for (int i = 0; i < 4; i++) {
     for (int j = 0; j < 4 - i - 1; j++) {
-      cout << "_";
+      cout << " ";
     }
     for (int j = 0; j < i + 1; j++) {
       cout << "* ";
