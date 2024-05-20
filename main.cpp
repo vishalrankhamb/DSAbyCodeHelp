@@ -126,17 +126,17 @@ int main() {
     for (int j = 0; j < i; j++) {
       cout << " ";
     }
-    for (int j = 0; j <4-i; j++) {
+    for (int j = 0; j < 4 - i; j++) {
       cout << "* ";
     }
     cout << endl;
   }
   cout << endl;
-  //Diamond Pattern
+  // Diamond Pattern
   cout << " Diamond Pattern: ";
   cout << endl;
-  for (int i = 0; i < 8/2; i++) {
-    for (int j = 0; j < 8 /2- i - 1; j++) {
+  for (int i = 0; i < 8 / 2; i++) {
+    for (int j = 0; j < 8 / 2 - i - 1; j++) {
       cout << " ";
     }
     for (int j = 0; j < i + 1; j++) {
@@ -144,12 +144,30 @@ int main() {
     }
     cout << endl;
   }
-  for (int i = 0; i < 8/2; i++) {
+  for (int i = 0; i < 8 / 2; i++) {
     for (int j = 0; j < i; j++) {
       cout << " ";
     }
-    for (int j = 0; j <8/2-i; j++) {
+    for (int j = 0; j < 8 / 2 - i; j++) {
       cout << "* ";
+    }
+    cout << endl;
+  }
+  cout << endl;
+
+  // Hollow Pyramid Pattern
+  cout << "Hollow Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < 4 - i - 1; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < i + 1; j++) {
+      if (j == 0 || j == i + 1 - 1) {
+        cout << "* ";
+      } else {
+        cout << "  ";
+      }
     }
     cout << endl;
   }
