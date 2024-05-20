@@ -172,5 +172,83 @@ int main() {
     cout << endl;
   }
   cout << endl;
+
+  // Inverted Hollow Pyramid Pattern
+  cout << "Inverted Hollow Pyramid Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < i; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < 5 - i; j++) {
+      if (j == 0 || j == 5 - i - 1) {
+        cout << "* ";
+      } else {
+        cout << "  ";
+      }
+    }
+    cout << endl;
+  }
+  cout << endl;
+
+  // Hollow Diamond Pattern
+  cout << "Hollow Diamond Pattern: ";
+  cout << endl;
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5 - i - 1; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < i + 1; j++) {
+      if (j == 0 || j == i + 1 - 1) {
+        cout << "* ";
+      } else {
+        cout << "  ";
+      }
+    }
+    cout << endl;
+  }
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < i; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < 5 - i; j++) {
+      if (j == 0 || j == 5 - i - 1) {
+        cout << "* ";
+      } else {
+        cout << "  ";
+      }
+    }
+    cout << endl;
+  }
+  cout << endl;
+
+  cout << "Flipped Solid Diamond: " << endl;
+
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5 - i; j++) {
+      cout << "* ";
+    }
+    for (int j = 0; j < 2 * i + 1; j++) {
+      cout << "  ";
+    }
+    for (int j = 0; j < 5 - i; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
+  for (int i = 0; i < 5; i++) {
+
+    for (int j = 0; j < i + 1; j++) {
+      cout << "* ";
+    }
+    for (int j = 0; j < 2 * 5 - 2 * i - 1; j++) {
+      cout << "  ";
+    }
+    for (int j = 0; j < i + 1; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
+
   return 0;
 }
