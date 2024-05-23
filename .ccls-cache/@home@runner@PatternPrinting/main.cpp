@@ -301,5 +301,46 @@ int main() {
   }
   cout << endl;
 
+  // A
+  // ABA
+  // ABCBA
+  // ABCDCBA
+  // ABCDEDCBA
+
+  for (int i = 0; i < 5; i++) {
+    char ch;
+    for (int j = 0; j < i + 1; j++) {
+      int n = j + 1;
+      ch = n + 'A' - 1;
+      cout << ch;
+    }
+    for (char alphabet = ch; alphabet > 'A';) {
+      alphabet = alphabet - 1;
+      cout << alphabet;
+    }
+    cout << endl;
+  }
+  cout << endl;
+
+  /* 12345
+     2  5
+     3 5
+     45
+     5 */
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5 - i - 1 + 1; j++) {
+      if (i == 0) {
+        cout << j + 1;
+      } else if (j == 0) {
+        cout << i + 1;
+      } else if (j == 5 - i - 1 + 1 - 1) {
+        cout << "5";
+      } else {
+        cout << " ";
+      }
+    }
+    cout << endl;
+  }
+
   return 0;
 }
