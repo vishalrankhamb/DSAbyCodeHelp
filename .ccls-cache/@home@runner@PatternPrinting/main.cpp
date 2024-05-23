@@ -300,13 +300,11 @@ int main() {
     cout << endl;
   }
   cout << endl;
-
   // A
   // ABA
   // ABCBA
   // ABCDCBA
   // ABCDEDCBA
-
   for (int i = 0; i < 5; i++) {
     char ch;
     for (int j = 0; j < i + 1; j++) {
@@ -338,6 +336,45 @@ int main() {
       } else {
         cout << " ";
       }
+    }
+    cout << endl;
+  }
+  // Flipped Solid Diamond.
+    /*       **** ****
+             ***   ***
+             **     **
+             *       *
+             *       *
+             **     **
+             ***   ***
+             **** ****     */
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < 4 - i; j++) {
+      cout << "*";
+    }
+    for (int j = 0; j < i + 1; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < i; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < 4 - i; j++) {
+      cout << "*";
+    }
+    cout << endl;
+  }
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < i + 1; j++) {
+      cout << "*";
+    }
+    for (int j = 0; j < 4 - i - 1; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < 4 - i; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < i + 1; j++) {
+      cout << "*";
     }
     cout << endl;
   }
